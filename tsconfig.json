@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "lib",
+    "emitDeclarationOnly": true,
+    "target": "ES5",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "types": ["@types/jest"],
+    "paths": {
+      "@/*": ["src/*"],
+      "hyyar-ui": ["src/components/index.ts"],
+      "hyyar-ui/esm/*": ["src/components/*"],
+      "hyyar-ui/lib/*": ["src/components/*"]
+    }
+  },
+  "include": ["src/components/*"],
+  "exclude": ["node_modules"]
+}
