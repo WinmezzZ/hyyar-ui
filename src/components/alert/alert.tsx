@@ -25,8 +25,7 @@ const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
 );
 
 Alert.propTypes = {
-  kind: propTypes.oneOf(['info', 'positive', 'negative', 'warning']),
-  children: propTypes.node
+  kind: propTypes.oneOf(['info', 'positive', 'negative', 'warning'])
 };
 
 export default Alert;
