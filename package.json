@@ -28,7 +28,8 @@
     "build": "npm run clean && gulp && npm run build:types ",
     "release": "node ./scripts/release.js",
     "new": "plop --plopfile ./scripts/plopfile.js",
-    "lint": "eslint --ext .ts,.tsx src/",
+    "lint": "tsc --pretty && eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write **/*.{js,ts,tsx}",
     "commit": "git-cz",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -121,8 +122,7 @@
   },
   "lint-staged": {
     "src/**/*.ts?(x)": [
-      "prettier --write",
-      "eslint --fix",
+      "npm run lint",
       "jest --bail --findRelatedTests",
       "git add"
     ]

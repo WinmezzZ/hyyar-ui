@@ -22,6 +22,6 @@
       "hyyar-ui/lib/*": ["src/components/*"]
     }
   },
-  "include": ["src/components/*"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }
