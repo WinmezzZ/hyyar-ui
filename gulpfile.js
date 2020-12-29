@@ -9,10 +9,10 @@ const paths = {
   dest: {
     lib: 'lib', // commonjs
     esm: 'esm', // ES module
-    dist: 'dist' // umd
+    dist: 'dist', // umd
   },
   styles: 'src/components/**/*.less',
-  scripts: ['src/components/**/*.{ts,tsx}', '!src/components/**/demo/*.{ts,tsx}', '!src/components/**/__tests__/*.{ts,tsx}']
+  scripts: ['src/components/**/*.{ts,tsx}', '!src/components/**/demo/*.{ts,tsx}', '!src/components/**/__tests__/*.{ts,tsx}'],
 };
 
 function cssInjection(content) {
@@ -41,7 +41,7 @@ function compileScripts(babelEnv, destDir) {
         } else {
           next();
         }
-      })
+      }),
     )
     .pipe(gulp.dest(destDir));
 }

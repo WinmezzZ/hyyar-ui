@@ -7,22 +7,22 @@ export default merge(baseTheme, {
   colors: {
     ...modes.light,
     modes: {
-      dark: modes.dark
-    }
+      dark: modes.dark,
+    },
   },
   fonts: {
     display: '"Source Sans Pro", sans-serif',
     monospace: '"Inconsolata", monospace',
-    ui: '"Source Sans Pro", sans-serif'
+    ui: '"Source Sans Pro", sans-serif',
   },
   fontSizes: [12, 16, 16, 16, 20, 28, 48, 64],
   fontWeights: {
     body: 400,
     heading: 700,
-    bold: 700
+    bold: 700,
   },
   lineHeights: {
     body: 1.5,
-    heading: 1.125
-  }
+    heading: 1.125,
+  },
 });

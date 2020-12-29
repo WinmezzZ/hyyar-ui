@@ -3,7 +3,7 @@ import { media } from 'gatsby-theme-docz/src/theme/breakpoints';
 export const main = {
   display: 'flex',
   flexDirection: 'column',
-  minHeight: '100vh'
+  minHeight: '100vh',
 };
 
 export const wrapper = {
@@ -13,6 +13,6 @@ export const wrapper = {
   gridTemplateColumns: '250px minmax(0, 1fr)',
   minHeight: '100vh',
   [media.tablet]: {
-    display: 'block'
-  }
+    display: 'block',
+  },
 };

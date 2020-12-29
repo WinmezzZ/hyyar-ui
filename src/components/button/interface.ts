@@ -1,1 +1,3 @@
-export interface Props {}
+export interface Props {
+  dsiabled?: boolean;
+}

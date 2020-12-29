@@ -10,5 +10,5 @@ export default {
   blueLight: '#e9f2fa',
   blue: '#1890ff',
   skyBlue: '#1FB6FF',
-  negative: '#EB4D4B'
+  negative: '#EB4D4B',
 };

@@ -5,8 +5,8 @@ export const link = {
   textDecoration: 'none',
   fontSize: 2,
   '&.active': {
-    color: 'sidebar.navLinkActive'
-  }
+    color: 'sidebar.navLinkActive',
+  },
 };
 
 export const smallLink = {
@@ -16,7 +16,7 @@ export const smallLink = {
   position: 'relative',
   color: 'sidebar.tocLink',
   '&.active': {
-    color: 'sidebar.tocLinkActive'
+    color: 'sidebar.tocLinkActive',
   },
   '&.active::before': {
     content: '""',
@@ -28,6 +28,6 @@ export const smallLink = {
     backgroundColor: 'primary',
     transition: 'width 200ms ease 0s',
     width: '2px',
-    borderRadius: 1
-  }
+    borderRadius: 1,
+  },
 };

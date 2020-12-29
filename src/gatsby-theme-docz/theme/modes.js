@@ -16,7 +16,7 @@ export const light = {
     navLink: colors.grayDark,
     navLinkActive: colors.blue,
     tocLink: colors.gray,
-    tocLinkActive: colors.grayExtraDark
+    tocLinkActive: colors.grayExtraDark,
   },
   header: {
     bg: colors.white,
@@ -24,8 +24,8 @@ export const light = {
     border: colors.grayLight,
     button: {
       bg: colors.blue,
-      color: colors.white
-    }
+      color: colors.white,
+    },
   },
   props: {
     bg: colors.grayUltraLight,
@@ -33,20 +33,20 @@ export const light = {
     highlight: colors.blue,
     defaultValue: colors.gray,
     descriptionText: colors.grayDark,
-    descriptionBg: colors.white
+    descriptionBg: colors.white,
   },
   playground: {
     bg: colors.white,
-    border: colors.grayLight
+    border: colors.grayLight,
   },
   blockquote: {
     bg: colors.grayExtraLight,
     border: colors.grayLight,
-    color: colors.gray
+    color: colors.gray,
   },
   prism: {
-    ...prismLight
-  }
+    ...prismLight,
+  },
 };
 
 export const dark = {
@@ -63,7 +63,7 @@ export const dark = {
     navLink: colors.grayLight,
     navLinkActive: colors.skyBlue,
     tocLink: colors.gray,
-    tocLinkActive: colors.grayLight
+    tocLinkActive: colors.grayLight,
   },
   header: {
     bg: colors.dark,
@@ -71,8 +71,8 @@ export const dark = {
     border: colors.grayDark,
     button: {
       bg: colors.skyBlue,
-      color: colors.white
-    }
+      color: colors.white,
+    },
   },
   props: {
     bg: colors.dark,
@@ -80,18 +80,18 @@ export const dark = {
     highlight: colors.skyBlue,
     defaultValue: colors.grayDark,
     descriptionText: colors.gray,
-    descriptionBg: colors.grayExtraDark
+    descriptionBg: colors.grayExtraDark,
   },
   playground: {
     bg: colors.dark,
-    border: colors.grayDark
+    border: colors.grayDark,
   },
   blockquote: {
     bg: colors.grayDark,
     border: colors.gray,
-    color: colors.gray
+    color: colors.gray,
   },
   prism: {
-    ...prismDark
-  }
+    ...prismDark,
+  },
 };

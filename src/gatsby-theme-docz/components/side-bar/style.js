@@ -2,8 +2,8 @@ import { media } from '~theme/breakpoints';
 
 export const global = {
   body: {
-    overflow: 'hidden'
-  }
+    overflow: 'hidden',
+  },
 };
 
 const HEADER_HEIGHT = 81;
@@ -18,7 +18,7 @@ export const overlay = ({ open }) => ({
   background: 'rgba(0,0,0,0.6)',
   transition: 'all .2s ease-out',
   visibility: open ? 'visible' : 'hidden',
-  opacity: open ? 1 : 0
+  opacity: open ? 1 : 0,
 });
 
 export const wrapper = ({ open }) => ({
@@ -46,6 +46,6 @@ export const wrapper = ({ open }) => ({
     px: 4,
     bg: 'background',
     transition: 'transform .2s ease-out',
-    transform: open ? 'translateX(0)' : 'translateX(-100%)'
-  }
+    transform: open ? 'translateX(0)' : 'translateX(-100%)',
+  },
 });

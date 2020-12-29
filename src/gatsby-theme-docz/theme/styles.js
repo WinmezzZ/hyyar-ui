@@ -1,44 +1,44 @@
 const styles = {
   Container: {
     p: 4,
-    maxWidth: 1280
+    maxWidth: 1280,
   },
   root: {
     fontSize: 3,
     color: 'text',
     bg: 'background',
-    fontFamily: 'ui'
+    fontFamily: 'ui',
   },
   a: {
     color: 'primary',
     textDecoration: 'none',
     '&:hover': {
       color: 'secondary',
-      textDecoration: 'underline'
-    }
+      textDecoration: 'underline',
+    },
   },
   h1: {
     fontSize: 6,
-    fontFamily: 'display'
+    fontFamily: 'display',
   },
   h2: {
     fontSize: 5,
-    fontFamily: 'display'
+    fontFamily: 'display',
   },
   h3: {
-    fontSize: 4
+    fontSize: 4,
   },
   h4: {
-    fontSize: 3
+    fontSize: 3,
   },
   h5: {
-    fontSize: 2
+    fontSize: 2,
   },
   h6: {
-    fontSize: 1
+    fontSize: 1,
   },
   li: {
-    marginBottom: 1
+    marginBottom: 1,
   },
   blockquote: {
     my: 4,
@@ -50,11 +50,11 @@ const styles = {
     color: 'blockquote.color',
     fontStyle: 'ui',
     '> p': {
-      m: 0
-    }
+      m: 0,
+    },
   },
   code: {
-    fontFamily: 'monospace'
+    fontFamily: 'monospace',
   },
   inlineCode: {
     fontFamily: 'monospace',
@@ -62,7 +62,7 @@ const styles = {
     bg: 'grayExtraLight',
     borderRadius: 'radius',
     px: 1,
-    mx: 1
+    mx: 1,
   },
   pre: {
     my: 4,
@@ -70,7 +70,7 @@ const styles = {
     variant: 'prism',
     textAlign: 'left',
     fontFamily: 'monospace',
-    borderRadius: 'radius'
+    borderRadius: 'radius',
   },
   table: {
     width: '100%',
@@ -83,22 +83,22 @@ const styles = {
       pr: '4px',
       pl: 0,
       borderColor: 'border',
-      borderBottomStyle: 'solid'
-    }
+      borderBottomStyle: 'solid',
+    },
   },
   th: {
     verticalAlign: 'bottom',
     borderBottomWidth: '1px',
-    fontWeight: 400
+    fontWeight: 400,
   },
   td: {
     verticalAlign: 'top',
-    borderBottomWidth: '1px'
+    borderBottomWidth: '1px',
   },
   hr: {
     border: 0,
-    borderBottom: t => `1px solid ${t.colors.border}`
-  }
+    borderBottom: t => `1px solid ${t.colors.border}`,
+  },
 };
 
 export default styles;

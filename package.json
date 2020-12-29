@@ -29,7 +29,7 @@
     "release": "node ./scripts/release.js",
     "new": "plop --plopfile ./scripts/plopfile.js",
     "lint": "tsc --pretty && eslint . --ext ts --ext tsx --ext js",
-    "format": "prettier --write **/*.{js,ts,tsx}",
+    "format": "eslint . --ext ts --ext tsx --ext js --fix",
     "commit": "git-cz",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -121,7 +121,7 @@
     "typescript": "^3.9.7"
   },
   "lint-staged": {
-    "src/**/*.ts?(x)": [
+    "src/**/*.(t|j)s?(x)": [
       "npm run lint",
       "jest --bail --findRelatedTests",
       "git add"

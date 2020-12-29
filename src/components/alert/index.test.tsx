@@ -18,7 +18,7 @@ describe('<Alert />', () => {
             {k}
           </Alert>
         ))}
-      </>
+      </>,
     );
 
     kinds.forEach(k => {

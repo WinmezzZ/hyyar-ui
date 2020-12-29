@@ -12,8 +12,7 @@ import { StyledContainer, StyledIconWrapper } from './style';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-markup';
-
-require('prismjs/components/prism-jsx');
+import 'prismjs/components/prism-jsx';
 
 interface Props {
   code: string;
@@ -65,7 +64,7 @@ export const HyyarBox: React.FC<Props> = ({ code, title, desc, children }) => {
           className="container__editor"
           style={{
             fontFamily: '"Fira code", "Fira Mono", monospace',
-            fontSize: 14
+            fontSize: 14,
           }}
         />
       </div>
@@ -76,7 +75,7 @@ export const HyyarBox: React.FC<Props> = ({ code, title, desc, children }) => {
 HyyarBox.propTypes = {
   code: propTypes.string.isRequired,
   title: propTypes.node,
-  desc: propTypes.node
+  desc: propTypes.node,
 };
 
 export default HyyarBox;

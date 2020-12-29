@@ -1,12 +1,8 @@
 import React from 'react';
 import { Props } from './interface';
 
-const defaultProps: Props = {};
-
-const Button: React.FC<Props> = userProps => {
-  const props = { ...defaultProps, ...userProps };
-
-  return <button {...props}>{userProps.children}</button>;
+const Button: React.FC<Props> = props => {
+  return <button {...props}></button>;
 };
 
 export default Button;

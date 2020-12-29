@@ -24,7 +24,7 @@ const getNextVersions = () => ({
   premajor: semverInc(currentVersion, 'premajor'),
   preminor: semverInc(currentVersion, 'preminor'),
   prepatch: semverInc(currentVersion, 'prepatch'),
-  prerelease: semverInc(currentVersion, 'prerelease')
+  prerelease: semverInc(currentVersion, 'prerelease'),
 });
 
 const timeLog = (logInfo, type) => {
@@ -37,7 +37,7 @@ const timeLog = (logInfo, type) => {
   const nowDate = new Date();
   console.log(
     `[${nowDate.toLocaleString()}.${nowDate.getMilliseconds().toString().padStart(3, '0')}] ${info}
-    `
+    `,
   );
 };
 
@@ -53,9 +53,9 @@ async function prompt() {
       message: `请选择将要发布的版本 (当前版本 ${currentVersion})`,
       choices: Object.keys(nextVersions).map(level => ({
         name: `${level} => ${nextVersions[level]}`,
-        value: nextVersions[level]
-      }))
-    }
+        value: nextVersions[level],
+      })),
+    },
   ]);
   return nextVersion;
 }
